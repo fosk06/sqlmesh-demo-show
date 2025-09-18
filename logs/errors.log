@@ -1,0 +1,39 @@
+See the caveats in the documentation: 
+https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  df[column] = pd.to_datetime(df[column], infer_datetime_format=True, errors="ignore")  # type: ignore
+/app/.venv/lib/python3.12/site-packages/sqlmesh/core/model/definition.py:1684: UserWarning: The argument 'infer_datetime_format' is 
+deprecated and will be removed in a future version. A strict version of it is now the default, see 
+https://pandas.pydata.org/pdeps/0004-consistent-to-datetime-parsing.html. You can safely remove this argument.
+  df[column] = pd.to_datetime(df[column], infer_datetime_format=True, errors="ignore")  # type: ignore
+/app/.venv/lib/python3.12/site-packages/sqlmesh/core/model/definition.py:1684: FutureWarning: errors='ignore' is deprecated and will 
+raise in a future version. Use to_datetime without passing `errors` and catch exceptions explicitly instead
+  df[column] = pd.to_datetime(df[column], infer_datetime_format=True, errors="ignore")  # type: ignore
+/app/.venv/lib/python3.12/site-packages/sqlmesh/core/model/definition.py:1684: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+ 
+See the caveats in the documentation: 
+https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  df[column] = pd.to_datetime(df[column], infer_datetime_format=True, errors="ignore")  # type: ignore
+
+
+root@b01866fb9966:/app#   df[column] = pd.to_datetime(df[column], infer_datetime_format=True, errors="ignore")  # type: ignore
+bash: syntax error near unexpected token `('
+root@b01866fb9966:/app# 
+root@b01866fb9966:/app# /app/.venv/lib/python3.12/site-packages/sqlmesh/core/model/definition.py:1684: UserWarning: The argument 'infer
+_datetime_format' is 
+bash: /app/.venv/lib/python3.12/site-packages/sqlmesh/core/model/definition.py:1684:: No such file or directory
+root@b01866fb9966:/app# 
+root@b01866fb9966:/app# deprecated and will be removed in a future version. A strict version of it is now the default, see 
+bash: deprecated: command not found
+root@b01866fb9966:/app# 
+root@b01866fb9966:/app# https://pandas.pydata.org/pdeps/0004-consistent-to-datetime-parsing.html. You can safely remove this argument.
+bash: https://pandas.pydata.org/pdeps/0004-consistent-to-datetime-parsing.html.: No such file or directory
+root@b01866fb9966:/app# 
+root@b01866fb9966:/app#   df[column] = pd.to_datetime(df[column], infer_datetime_format=True, errors="ignore")  # type: ignore
+bash: syntax error near unexpected token `('
+root@b01866fb9966:/app# 
+root@b01866fb9966:/app# /app/.venv/lib/python3.12/site-packages/sqlmesh/core/model/definition.py:1684: FutureWarning: errors='ignore' i
+s deprecated and will 
+bash: /app/.venv/lib/python3.12/site-packages/sqlmesh/core/model/definition.py:1684:: No such file or directory
+root@b01866fb9966:/app#
