@@ -1,0 +1,27 @@
+gateways:
+  bigquery:
+    connection:
+      type: bigquery
+      project: "******"
+    state_connection:
+      type: postgres
+      host: ******
+      port: 5432
+      user: postgres
+      password: "******"
+      database: postgres
+
+  local:
+    connection:
+      type: duckdb
+      database: dev.duckdb
+
+default_gateway: bigquery
+
+model_defaults:
+  dialect: bigquery
+  start: 2025-07-01
+  cron: "@daily"
+
+linter:
+  enabled: false

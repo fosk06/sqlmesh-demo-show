@@ -1,0 +1,24 @@
+[project]
+name = "sqlmesh-demo-show"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "sqlmesh[bigquery,postgres]>=0.218.0",
+]
+
+[project.optional-dependencies]
+bigquery = [
+    "sqlmesh>=0.218.0",
+]
+postgres = [
+    "sqlmesh>=0.218.0",
+    "psycopg2-binary>=2.9.0",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.4.2",
+    "ruff>=0.13.0",
+]
