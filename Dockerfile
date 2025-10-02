@@ -4,7 +4,7 @@ COPY --from=docker.io/astral/uv:0.8.14 /uv /uvx /bin/
 
 WORKDIR /app
 
-COPY src/pyproject.toml .
-COPY src/app/ .
+COPY pyproject.toml .
+COPY . .
 
 RUN uv sync --all-extras
