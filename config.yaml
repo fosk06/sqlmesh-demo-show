@@ -17,6 +17,7 @@ gateways:
       database: dev.duckdb
 
 default_gateway: bigquery
+disable_anonymized_analytics: true
 
 model_defaults:
   dialect: bigquery
