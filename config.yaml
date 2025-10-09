@@ -6,7 +6,7 @@ gateways:
     state_connection:
       type: postgres
       host: "${POSTGRES_HOST}"
-      port: "${POSTGRES_PORT:-5432}"
+      port: 5432
       user: "${POSTGRES_USER:-postgres}"
       password: "${POSTGRES_PASSWORD}"
       database: "${POSTGRES_DATABASE:-postgres}"
@@ -16,7 +16,7 @@ gateways:
       type: duckdb
       database: dev.duckdb
 
-default_gateway: bigquery
+default_gateway: local
 disable_anonymized_analytics: true
 
 model_defaults:

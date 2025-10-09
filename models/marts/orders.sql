@@ -4,7 +4,7 @@ MODEL (
   cron '*/5 * * * *',
   grain order_id,
   tags ["dagster:group_name:datamarts", "datamarts"],
-  partitioned_by = ["order_date"],
+  partitioned_by (order_date),
   audits(
     number_of_rows(threshold := 10),
     not_null(columns := (order_id, customer_id, store_id, order_date, order_total, status)),
