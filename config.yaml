@@ -2,14 +2,14 @@ gateways:
   bigquery:
     connection:
       type: bigquery
-      project: "******"
+      project: "${BIGQUERY_PROJECT}"
     state_connection:
       type: postgres
-      host: ******
-      port: 5432
-      user: postgres
-      password: "******"
-      database: postgres
+      host: "${POSTGRES_HOST}"
+      port: "${POSTGRES_PORT:-5432}"
+      user: "${POSTGRES_USER:-postgres}"
+      password: "${POSTGRES_PASSWORD}"
+      database: "${POSTGRES_DATABASE:-postgres}"
 
   local:
     connection:
